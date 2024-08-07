@@ -20,3 +20,32 @@ local Main = Lib:royxstart("Royx Hub")
 local Tab = Main:royxtab("Tab 1")
 local Tab2 = Main:royxtab("Tab 2")
 ```
+
+- Create Page
+```lua
+local Page = Tab:royxpage("Auto Farm")
+```
+
+- Create Button
+```lua
+Page:Button("Button",function()
+   print("Sex that tuyet khi co Hutao")
+end)
+```
+- Create Notification
+```lua
+royxui:Notification("Notification","Royx",5)
+```
+Exam: 
+```lua
+Page:Button("Notification",function()
+	Lib:Notification("Notification","Royx",5)
+end)
+```
+Function:
+```lua
+function Alert(cac, bu, dur)
+   Lib:Notification(cac,bu,dur)
+end
+Alert("Notification", "You are Gay (legit)", 5)
+```
