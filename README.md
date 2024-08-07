@@ -57,3 +57,87 @@ local Toggle = Page:Toggle("Toggle",17634661789,false,function(V)
 end)
 ```
 <h4>Can change 17634661789 to every decal in roblox</h4>
+
+- Create Line
+```lua
+Page:Line()
+```
+
+- Create Label
+```lua
+Page:Label("Using App SayGex69 now")
+```
+
+- Create Textbox
+```lua
+Page:Textbox("TextBox","PlaceFolder",function(v)
+	_G.Textbox = v
+	print(_G.Textbox)
+end)
+```
+
+- Create DropDown
+```lua
+local dropno = Page:Dropdown("DropDown",{"1","2","3"},"3",function (v)
+	_G.dropno = v
+end)
+```
+- Clear DropDown
+```lua
+dropno:Clear()
+```
+
+Exam:
+```lua
+Page:Button("Clear Dropdown",function()
+	dropno:Clear()
+end)
+```
+
+- Add DropDown
+```lua
+dropno:Add("Test")
+```
+Exam:
+```lua
+Page:Button("Add Dropdown",function()
+	dropno:Add("Test")
+end)
+```
+
+- Add slider
+```lua
+Page:Slider("Slider",true,0,100,10,10,function(v)
+	print(v)
+end)
+```
+
+- Multi DropDown
+```lua
+local test ={
+	a = false;
+	b = false;
+	c = false;
+}
+
+Page:MultiDropdown("Multi DropDown",true,{
+	location = test;
+	list = {
+		{
+			Name = "one";
+			flag = "a";
+		};
+		{
+			Name = "two";
+			flag = "b";
+		};
+		{
+			Name = "thee";
+			flag = "c";
+		};
+	};
+	default = "test";
+}, function(v)
+	_G.dropno = v
+end)
+```
