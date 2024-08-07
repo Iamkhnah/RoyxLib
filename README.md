@@ -1,1 +1,3 @@
 # RoyxLib
+
+__abc__
