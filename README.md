@@ -34,12 +34,12 @@ end)
 ```
 - Create Notification
 ```lua
-royxui:Notification("Notification","Royx",5)
+Lib:Notification("Notification","Royx",5)
 ```
 Exam: 
 ```lua
 Page:Button("Notification",function()
-	Lib:Notification("Notification","Royx",5)
+   Lib:Notification("Notification","Royx",5)
 end)
 ```
 Function:
@@ -49,3 +49,11 @@ function Alert(cac, bu, dur)
 end
 Alert("Notification", "You are Gay (legit)", 5)
 ```
+
+- Create Toggle
+```lua
+local Toggle = Page:Toggle("Toggle",17634661789,false,function(V)
+   succac = V
+end)
+```
+<h4>Can change 17634661789 to every decal in roblox</h4>
